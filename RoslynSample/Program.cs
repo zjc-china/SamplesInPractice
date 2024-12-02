@@ -1,0 +1,3 @@
+﻿using RoslynSample;
+
+SourceGeneratorSample.MainTest();

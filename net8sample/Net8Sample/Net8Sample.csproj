@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <!-- <UseArtifactsOutput>true</UseArtifactsOutput> -->
+    <!-- <ArtifactsPath>artifacts</ArtifactsPath> -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Using Include="Net8Sample" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.Extensions.Http.AutoClient" Version="8.0.0-rc.2.23510.2" />
+    <PackageReference Include="WeihanLi.Common" Version="1.0.60-preview-20230812-150107" />
+  </ItemGroup>
+
+</Project>

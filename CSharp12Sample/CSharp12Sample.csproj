@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <EnablePreviewFeatures>true</EnablePreviewFeatures>
+    <Features>InterceptorsPreview</Features>
+    <InterceptorsPreviewNamespaces>$(InterceptorsPreviewNamespaces);CSharp12Sample.Generated</InterceptorsPreviewNamespaces>
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    <EnableDefaultItems>false</EnableDefaultItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Using Include="CSharp12Sample" />
+    <PackageReference Include="WeihanLi.Common" Version="1.0.60-preview-20230913-003854" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="CollectionLiteralSample.cs" />
+    <Compile Include="InlineArraySample.cs" />
+    <Compile Include="InterceptorSample.cs" />
+    <Compile Include="LambdaDefaultValueSample.cs" />
+    <Compile Include="PrimaryConstructorSample.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="UsingAliasAnyTypeSample.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="./gen.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Properties\launchSettings.json" />
+  </ItemGroup>
+
+</Project>

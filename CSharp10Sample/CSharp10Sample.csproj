@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
+    <EnablePreviewFeatures>true</EnablePreviewFeatures>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WeihanLi.Common" Version="1.0.47" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Using Include="$(RootNamespace)"/>
+    <Using Include="WeihanLi.Common.Helpers"/>
+    <Using Include="WeihanLi.Common.Helpers.InvokeHelper" Static="true"/>
+    <Using Include="WeihanLi.Common.Logging"/>
+    <Using Include="System.IO.File" Alias="MyFile"/>
+    <Using Remove="System.Net.Http" />
+  </ItemGroup>
+
+</Project>
