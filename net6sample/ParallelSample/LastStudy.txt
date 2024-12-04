@@ -1,0 +1,2 @@
+上次学习到：
+https://learn.microsoft.com/zh-cn/dotnet/standard/parallel-programming/how-to-iterate-file-directories-with-the-parallel-class

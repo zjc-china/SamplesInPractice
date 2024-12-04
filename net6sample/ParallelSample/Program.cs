@@ -1,9 +1,24 @@
-﻿using System;
+﻿using ParallelSample;
+using System;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using static System.Console;
+
+
+PartitionerParallel.Test();
+//ParallelCancel.Test();
+//ParallelLocal.TestFor();
+
+//GetPrimeListExample.TestGetPrimeList();
+
+//MultiplyMatrices.TestByMatrix(args);
+
+if (args.Length>0)
+{
+    ParallelFileSize.GetFileSize(args[0]);
+}
 
 var watch = Stopwatch.StartNew();
 await Task.WhenAll(Enumerable.Range(1, 100).Select(_ => Task.Delay(1000)));
